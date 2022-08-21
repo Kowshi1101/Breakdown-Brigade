@@ -17,6 +17,12 @@
             android:name=".homepage"
             android:exported="false" />
         <activity
+            android:name=".foreman_login"
+            android:exported="false" />
+        <activity
+            android:name=".admin_login"
+            android:exported="false" />
+        <activity
             android:name=".admin_dashboard"
             android:exported="false" />
         <activity

@@ -17,6 +17,9 @@
             android:name=".homepage"
             android:exported="false" />
         <activity
+            android:name=".admin_dashboard"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity

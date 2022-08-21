@@ -46,9 +46,9 @@ public class LoginActivity extends AppCompatActivity {
 
     }
     public void validate(String username, String password){
-        boolean equals = username.equals("hank");
+        boolean equals = username.equals("admin");
         //String str = BuildConfig.BUILD_TYPE;
-        if (equals &&  password.equals("hank")){
+        if (equals &&  password.equals("admin")){
             this.etuser.setText("");
             this.etpass.setText("");
             startActivity(new Intent(getApplicationContext(),MainActivity.class));

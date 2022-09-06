@@ -46,7 +46,7 @@
             android:fontFamily="@font/gvtime"
             android:text="User Login"
             android:textAlignment="center"
-            android:textColor="#888585"
+            android:textColor="#80CBC4"
             android:textSize="50sp" />
 
 

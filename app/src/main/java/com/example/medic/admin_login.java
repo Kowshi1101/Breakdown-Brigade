@@ -45,9 +45,9 @@ public class admin_login extends AppCompatActivity {
 
     }
     public void validate(String username, String password){
-        boolean equals = username.equals("admin");
+        boolean equals = username.equals("");
         //String str = BuildConfig.BUILD_TYPE;
-        if (equals &&  password.equals("admin")){
+        if (equals &&  password.equals("")){
             this.etuser.setText("");
             this.etpass.setText("");
             startActivity(new Intent(getApplicationContext(),MainActivity.class));

@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:fontFamily="@font/gvtime"
-            android:text="Login"
+            android:text="Foreman Login"
             android:textAlignment="center"
             android:textColor="#888585"
             android:textSize="50sp" />

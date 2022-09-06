@@ -1,16 +1,14 @@
-package com.example.medic.admin;
+package com.example.medic;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.medic.R;
-
-public class admin_login extends AppCompatActivity {
+public class lift_vehicle_details extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_login);
+        setContentView(R.layout.activity_lift_vehicle_details);
     }
 }

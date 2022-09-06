@@ -1,17 +1,14 @@
-package com.example.medic.admin;
+package com.example.medic;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.medic.R;
-
-public class admin_dashboard extends AppCompatActivity {
-
+public class flat_vehicle_details extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_dashboard);
+        setContentView(R.layout.activity_flat_vehicle_details);
     }
 }

@@ -9,15 +9,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-public class LoginActivity extends AppCompatActivity {
 
+public class foreman_login extends AppCompatActivity {
     TextView txtSignUp;
     Button btnlogin;
     EditText etuser,etpass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_foreman_login);
 
         getSupportActionBar();
 
@@ -29,8 +29,8 @@ public class LoginActivity extends AppCompatActivity {
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               LoginActivity lg = LoginActivity.this;
-               lg.validate(lg.etuser.getText().toString(),LoginActivity.this.etpass.getText().toString());
+                foreman_login lg = foreman_login.this;
+                lg.validate(lg.etuser.getText().toString(),foreman_login.this.etpass.getText().toString());
             }
         });
 
@@ -38,7 +38,7 @@ public class LoginActivity extends AppCompatActivity {
         txtSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
+                Intent intent = new Intent(foreman_login.this, SignUpActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -57,7 +57,5 @@ public class LoginActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(),"Login Failed", Toast.LENGTH_LONG).show();
         this.etuser.setText("");
         this.etpass.setText("");
-
-
     }
 }

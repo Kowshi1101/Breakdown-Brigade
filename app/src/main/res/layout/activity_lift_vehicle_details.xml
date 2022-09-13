@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
-            android:text="Lift_vehicle"
+            android:text="Hydraulic Towing"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textStyle="bold|italic"
             app:layout_constraintEnd_toEndOf="parent"
@@ -52,10 +52,7 @@
 The good news about the wheel lift is that you won’t see any hooks or chains involved.
 The wheel lift trucks will use something called a yoke, which is a piece attached to the back of the tow truck which goes under the front wheels of the car.
 When it goes under the front wheels, it can then lift the car and tow it while the back wheels are still on the ground.\n
-        Since no chain is in place, there is much less chance the front bumper will get damaged.One of the great things about wheel lift tow trucks is that they are simple, quick, and relatively easy.
-If you need to get your car off the highway rather quickly, this is a great truck to consider.\n
-If you watch a professional tow truck driver, they can have one of these types of trucks hooked up and pulled away in a matter of minutes.
-You will sometimes see these trucks carrying a car using the front wheels, and other times, you may notice that the back wheels are pulled up.\n        Most of the time, this is done with the front wheels suspended in the air, but if the car is in a location that is difficult to remove it from, the back wheels can work as well."
+        "
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

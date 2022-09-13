@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
-            android:text="Lift_vehicle"
+            android:text="Flatbed Towing"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textStyle="bold|italic"
             app:layout_constraintEnd_toEndOf="parent"
@@ -32,13 +32,13 @@
 
         <ImageView
             android:id="@+id/imageView6"
-            android:layout_width="227dp"
-            android:layout_height="168dp"
+            android:layout_width="278dp"
+            android:layout_height="182dp"
             android:layout_marginTop="50dp"
             app:layout_constraintEnd_toEndOf="@+id/textView3"
             app:layout_constraintStart_toStartOf="@+id/textView3"
             app:layout_constraintTop_toBottomOf="@+id/textView3"
-            app:srcCompat="@drawable/integrated_tow_trucks_1_"
+            app:srcCompat="@drawable/flatbed_or_rollback_tow_truck"
             tools:ignore="MissingConstraints" />
 
         <TextView
@@ -48,12 +48,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="50dp"
             android:layout_marginEnd="10dp"
-            android:text="      A flatbed tow truck will look a little different than the standard tow trucks you may be accustomed to seeing.The flatbed tow truck has a large flatbed a vehicle can sit on completely.The back of the flatbed truck is what allows a car to be loaded onto the flatbed.The flatbed is capable of sliding out and then tilting towards the ground.\n        When the flatbed is tilted and on the ground, a car or other type of vehicle can drive up and park on top of the flatbed.
-        \n      Once the car is on top of the flatbed tow truck, it can be secured using a winch, and the ramp will return to its normal position.The back of the flatbed truck is powered by hydraulics, and there will be weight limits involved that you will not be able to exceed.
-        \n      One of the best things about the flatbed tow truck is that it keeps cars entirely off the ground.This gives the car a much smaller risk of damage than a car riding along the road.\n        One of the reasons you would need a flatbed truck is if your car was ultimately totaled.
-        Sometimes there is no way to get a totaled car to travel along the roadway on its own, and it needs to be lifted and placed on top of a flatbed truck.
-        If the car can no longer drive on its own, the winch will be used to pull what is left of the car onto the top of the flatbed truck.Sometimes a flatbed truck will be referred to as a slide or a rollback truck.
-        This is because of the back end of the truck that extends out of the back of the vehicle."
+            android:text="      A flatbed tow truck will look a little different than the standard tow trucks you may be accustomed to seeing.The flatbed tow truck has a large flatbed a vehicle can sit on completely.The back of the flatbed truck is what allows a car to be loaded onto the flatbed.The flatbed is capable of sliding out and then tilting towards the ground.\n        When the flatbed is tilted and on the ground, a car or other type of vehicle can drive up and park on top of the flatbed."
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

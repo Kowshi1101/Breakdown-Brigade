@@ -55,5 +55,17 @@
             app:layout_constraintTop_toBottomOf="@+id/textView3"
             app:srcCompat="@drawable/whatsapp_image_2022_09_06_at_3_32_44_pm" />
 
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="308dp"
+            android:layout_marginEnd="212dp"
+            android:text="Book Now"
+            app:layout_constraintEnd_toEndOf="@+id/imageView9"
+            app:layout_constraintHorizontal_bias="0.973"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

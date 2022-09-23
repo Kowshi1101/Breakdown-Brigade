@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.medic">
+    package="com.example.medic" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
 
     <application
         android:allowBackup="true"
@@ -12,7 +18,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MEDIC"
-        tools:targetApi="31">
+        tools:targetApi="31" >
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity
+            android:name=".location"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity
+            android:name=".map"
+            android:exported="false" />
         <activity
             android:name=".gmap"
             android:exported="false" />
@@ -35,14 +57,7 @@
             android:name=".user_login"
             android:exported="false" />
         <activity
-            android:name=".ui.login.user_login"
-            android:exported="false"
-            android:label="@string/title_activity_user_login" />
-        <activity
             android:name=".homepage"
-            android:exported="false" />
-        <activity
-            android:name=".admin_dashboard"
             android:exported="false" />
         <activity
             android:name=".SignUpActivity"
@@ -52,7 +67,7 @@
             android:exported="false" />
         <activity
             android:name=".Splashscreen"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -60,9 +75,7 @@
             </intent-filter>
         </activity>
 
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+
     </application>
 
 </manifest>

@@ -4,22 +4,22 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.22826086956521738" />
+        <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/layout/activity_hook_vehicle_details.xml" value="0.10989583333333333" />
+        <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/layout/activity_location.xml" value="0.25" />
         <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
         <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/layout/activity_map.xml" value="0.10989583333333333" />
         <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/layout/activity_sign_up.xml" value="0.22826086956521738" />
         <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/layout/fragment_home.xml" value="0.22826086956521738" />
         <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/layout/fragment_notify.xml" value="0.22826086956521738" />
         <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/layout/fragment_profile.xml" value="0.22826086956521738" />
         <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/layout/fragment_search.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.2645" />
-        <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/drawable/ic_baseline_notifications_24.xml" value="0.2645" />
         <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/layout/activity_admin_login.xml" value="0.11277173913043478" />
-        <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/layout/activity_flat_vehicle_details.xml" value="0.264" />
-        <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/layout/activity_gmap.xml" value="0.27447916666666666" />
-        <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/layout/activity_homepage.xml" value="0.4" />
-        <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/layout/activity_hook_vehicle_details.xml" value="0.26495726495726496" />
+        <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/layout/activity_flat_vehicle_details.xml" value="0.4" />
+        <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/layout/activity_homepage.xml" value="0.1" />
+        <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/layout/activity_hook_vehicle_details.xml" value="0.4" />
         <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/layout/activity_lift_vechicle_details.xml" value="0.1" />
-        <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/layout/activity_lift_vehicle_details.xml" value="0.264" />
+        <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/layout/activity_lift_vehicle_details.xml" value="0.1" />
         <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/layout/activity_splashscreen.xml" value="0.21784420289855072" />
@@ -27,10 +27,9 @@
         <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/layout/fragment_home.xml" value="0.536" />
         <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/layout/fragment_notify.xml" value="0.1334853090172239" />
         <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/layout/fragment_profile.xml" value="0.1334853090172239" />
-        <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/layout/fragment_search.xml" value="0.4" />
+        <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/layout/fragment_search.xml" value="0.1334853090172239" />
         <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/layout/helllo.xml" value="0.1" />
         <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/layout/hello.xml" value="0.1" />
-        <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/menu/item_menu.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.137" />
         <entry key="..\:/Users/91967/Desktop/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/MEDIC-fa8730fcdcfc9bb330a68a2358014a9adce188d8/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.137" />
         <entry key="..\:/Users/Dineshbabu/AndroidStudioProjects/MEDIC/app/src/main/res/drawable/ic_home.xml" value="0.1" />

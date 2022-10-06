@@ -1,7 +1,10 @@
 package com.example.medic;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -9,56 +12,80 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class SignUpActivity extends AppCompatActivity {
 
     EditText n,e,m,p,cp;
     Button b;
-    dbhelper mydb;
+    String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+    ProgressDialog progressDialog ;
+    FirebaseAuth mAuth ;
+    FirebaseUser mUser ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
-         this.mydb=new dbhelper(this);
-        this.n =(EditText) findViewById(R.id.edtSignUpFullName);
-        this.e =(EditText) findViewById(R.id.edtSignUpEmail);
-        this.m =(EditText) findViewById(R.id.edtSignUpMobile);
-        this.p =(EditText) findViewById(R.id.edtSignUpPassword);
-        //this.cp =(EditText) findViewById(R.id.edtSignUpConfirmPassword);
-        this.b =(Button) findViewById(R.id.btnSignUp);
+        n =(EditText) findViewById(R.id.edtSignUpFullName);
+        e =(EditText) findViewById(R.id.edtSignUpEmail);
+        m =(EditText) findViewById(R.id.edtSignUpMobile);
+        p =(EditText) findViewById(R.id.edtSignUpPassword);
+        cp =(EditText) findViewById(R.id.edtSignUpConfirmPassword);
+        b =(Button) findViewById(R.id.btnSignUp);
+        progressDialog = new ProgressDialog( this ) ;
+        mAuth = FirebaseAuth.getInstance();
+        mUser = mAuth.getCurrentUser();
 
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                PerforAuth();
 
-                String sname = SignUpActivity.this.n.getText().toString();
-                String semail = SignUpActivity.this.e.getText().toString();
-                String smobno = SignUpActivity.this.m.getText().toString();
-                String spass = SignUpActivity.this.p.getText().toString();
-                if(TextUtils.isEmpty(sname)){
-                    Toast.makeText(SignUpActivity.this.getApplicationContext(),"please enter name", Toast.LENGTH_LONG).show();
-                }
-                else if(TextUtils.isEmpty(semail)){
-                    Toast.makeText(SignUpActivity.this.getApplicationContext(),"please enter email", Toast.LENGTH_SHORT).show();
-                }
-                else if(TextUtils.isEmpty(smobno)){
-                    Toast.makeText(SignUpActivity.this.getApplicationContext(),"please enter mobno", Toast.LENGTH_SHORT).show();
-                }
-                else if(TextUtils.isEmpty(spass)){
-                    Toast.makeText(SignUpActivity.this.getApplicationContext(),"please enter pass", Toast.LENGTH_SHORT).show();
-                }else{
+            }
 
-                     if (SignUpActivity.this.mydb.insert(sname,semail,smobno,spass)) {
-                        Toast.makeText(SignUpActivity.this.getApplicationContext(), "data inserted", Toast.LENGTH_SHORT).show();
+            private void PerforAuth() {
+                String name = n.getText().toString();
+                String email = e.getText().toString();
+                String mobno = m.getText().toString();
+                String password = p.getText().toString();
+                String confrimPassword = cp.getText().toString();
 
-                    }
-
-                    else{
-                        Toast.makeText(SignUpActivity.this.getApplicationContext(),"Not inserted", Toast.LENGTH_SHORT).show();
-                    }
+                if (!email.matches(emailPattern)) {
+                    e.setError("Enter Connext Email");
+                } else if (password.isEmpty() || password.length() < 6) {
+                    p.setError("Enter Proper Password ");
+                } else if (!password.equals(confrimPassword)) {
+                    cp.setError("Password Not match Both field");
+                } else {
+                    progressDialog.setMessage(" Please Wait While Registration ... ");
+                    progressDialog.setTitle(" Registration ");
+                    progressDialog.setCanceledOnTouchOutside(false);
+                    progressDialog.show();
+                    mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                progressDialog.dismiss();
+                                sendUserToNextActivity();
+                                Toast.makeText(SignUpActivity.this, "Resgistration Successful", Toast.LENGTH_SHORT).show();
+                            } else {
+                                progressDialog.dismiss();
+                                Toast.makeText(SignUpActivity.this, "" + task.getException(), Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
                 }
             }
-        });
+            });
+    }
 
-
+    private void sendUserToNextActivity() {
+        Intent intent = new Intent(SignUpActivity.this,MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 }

@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class admin_login extends AppCompatActivity {
     Button btnlogin;
     EditText etuser,etpass;
-//    ProgressDialog progressDialog ;
+    ProgressDialog progressDialog ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +23,8 @@ public class admin_login extends AppCompatActivity {
         this.btnlogin=(Button)findViewById(R.id.btnSignIn);
         this.etuser = (EditText)findViewById(R.id.edtSignInEmail);
         this.etpass = (EditText)findViewById(R.id.edtSignInPassword);
+
+        progressDialog = new ProgressDialog( this ) ;
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,8 +37,8 @@ public class admin_login extends AppCompatActivity {
                 }else if(!password.equals("12345")){
                     etpass.setError("Enter Correct Password ");
                 }else{
-//                    progressDialog.setMessage(" Please Wait While Login ... ");
-//                    progressDialog.setTitle(" Logging in ");
+                    progressDialog.setMessage(" Please Wait While Login ... ");
+                    progressDialog.setTitle(" Logging in ");
                     Intent intent = new Intent(admin_login.this,adminhomepage.class);
                     startActivity(intent);
                 }

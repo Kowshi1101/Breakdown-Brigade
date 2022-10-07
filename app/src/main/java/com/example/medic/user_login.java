@@ -69,8 +69,8 @@ public class user_login extends AppCompatActivity {
         }else if (password.isEmpty() || password.length() < 6) {
             p.setError("Enter Proper Password ");
         }else {
-            progressDialog.setMessage(" Please Wait While Registration ... ");
-            progressDialog.setTitle(" Registration ");
+            progressDialog.setMessage(" Please Wait While Login ... ");
+            progressDialog.setTitle(" Logging in ");
             progressDialog.setCanceledOnTouchOutside(false);
             progressDialog.show();
 

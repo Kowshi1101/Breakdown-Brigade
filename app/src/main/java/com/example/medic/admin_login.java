@@ -2,6 +2,7 @@ package com.example.medic;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +15,7 @@ public class admin_login extends AppCompatActivity {
     TextView txtSignUp;
     Button btnlogin;
     EditText etuser,etpass;
+    ProgressDialog progressDialog ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,34 +29,26 @@ public class admin_login extends AppCompatActivity {
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                admin_login lg = admin_login.this;
-                lg.validate(lg.etuser.getText().toString(),admin_login.this.etpass.getText().toString());
+                String email = etuser.getText().toString();
+                String password = etpass.getText().toString();
+                if(!email.equals("admin")) {
+                    etuser.setError("Enter Correct username");
+                }else if (password.isEmpty() || password.length() < 5) {
+                    etpass.setError("Enter Proper Password ");
+                }else if(!password.equals("12345")){
+                    etpass.setError("Enter Correct Password ");
+                }else{
+                    progressDialog.setMessage(" Please Wait While Login ... ");
+                    progressDialog.setTitle(" Logging in ");
+                    Intent intent = new Intent(admin_login.this,adminhomepage.class);
+                    startActivity(intent);
+                }
             }
         });
 
 
-        txtSignUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(admin_login.this, SignUpActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
 
-    }
-    public void validate(String username, String password){
-        boolean equals = username.equals("");
-        //String str = BuildConfig.BUILD_TYPE;
-        if (equals &&  password.equals("")){
-            this.etuser.setText("");
-            this.etpass.setText("");
-            startActivity(new Intent(getApplicationContext(),MainActivity.class));
-            return;
-        }
-        Toast.makeText(getApplicationContext(),"Login Failed", Toast.LENGTH_LONG).show();
-        this.etuser.setText("");
-        this.etpass.setText("");
+
     }
 }

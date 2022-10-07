@@ -12,16 +12,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class admin_login extends AppCompatActivity {
-    TextView txtSignUp;
     Button btnlogin;
     EditText etuser,etpass;
-    ProgressDialog progressDialog ;
+//    ProgressDialog progressDialog ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_login);
-
-        txtSignUp = findViewById(R.id.txtSignUp);
 
         this.btnlogin=(Button)findViewById(R.id.btnSignIn);
         this.etuser = (EditText)findViewById(R.id.edtSignInEmail);
@@ -38,8 +35,8 @@ public class admin_login extends AppCompatActivity {
                 }else if(!password.equals("12345")){
                     etpass.setError("Enter Correct Password ");
                 }else{
-                    progressDialog.setMessage(" Please Wait While Login ... ");
-                    progressDialog.setTitle(" Logging in ");
+//                    progressDialog.setMessage(" Please Wait While Login ... ");
+//                    progressDialog.setTitle(" Logging in ");
                     Intent intent = new Intent(admin_login.this,adminhomepage.class);
                     startActivity(intent);
                 }

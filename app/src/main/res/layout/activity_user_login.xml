@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/cars"
     android:scrollbars="none"
-    tools:context=".LoginActivity">
+    tools:context=".user_login">
 
     <LinearLayout
         android:layout_width="match_parent"

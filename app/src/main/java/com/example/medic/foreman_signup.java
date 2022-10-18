@@ -1,14 +1,11 @@
 package com.example.medic;
 
-import static android.content.ContentValues.TAG;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -27,7 +24,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-public class SignUpActivity extends AppCompatActivity {
+public class foreman_signup extends AppCompatActivity {
 
     public static final String TAG = "TAG";
     EditText n,e,m,p,cp;
@@ -84,14 +81,14 @@ public class SignUpActivity extends AppCompatActivity {
                             if (task.isSuccessful()) {
                                 progressDialog.dismiss();
                                 sendUserToNextActivity();
-                                Toast.makeText(SignUpActivity.this, "Resgistration Successful", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(foreman_signup.this, "Resgistration Successful", Toast.LENGTH_SHORT).show();
                                 uid = mAuth.getCurrentUser().getUid();
-                                DocumentReference documentReference = fstore.collection("users").document(uid);
+                                DocumentReference documentReference = fstore.collection("foreman").document(uid);
                                 Map<String,Object> user = new HashMap<>();
                                 user.put("name",name);
                                 user.put("email",email);
                                 user.put("phone",mobno);
-                                user.put("role", "user");
+                                user.put("role", "foreman");
                                 documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
                                     public void onSuccess(Void unused) {
@@ -100,17 +97,17 @@ public class SignUpActivity extends AppCompatActivity {
                                 });
                             } else {
                                 progressDialog.dismiss();
-                                Toast.makeText(SignUpActivity.this, "" + task.getException(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(foreman_signup.this, "" + task.getException(), Toast.LENGTH_SHORT).show();
                             }
                         }
                     });
                 }
             }
-            });
+        });
     }
 
     private void sendUserToNextActivity() {
-        Intent intent = new Intent(SignUpActivity.this,MainActivity.class);
+        Intent intent = new Intent(foreman_signup.this,adminhomepage.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }

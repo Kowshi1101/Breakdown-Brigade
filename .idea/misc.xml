@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/drawable/ic_baseline_accessibility_new_24.xml" value="0.224" />
+        <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.224" />
         <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.22826086956521738" />
         <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/layout/activity_admin_login.xml" value="0.25" />
         <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/layout/activity_adminhomepage.xml" value="0.2" />

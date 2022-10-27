@@ -20,6 +20,12 @@
         android:theme="@style/Theme.MEDIC"
         tools:targetApi="31">
         <activity
+            android:name=".foreman_profile"
+            android:exported="false" />
+        <activity
+            android:name=".forman_homepage"
+            android:exported="false" />
+        <activity
             android:name=".foreman_signup"
             android:exported="false" />
         <activity

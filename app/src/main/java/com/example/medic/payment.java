@@ -21,7 +21,7 @@ public class payment extends AppCompatActivity implements PaymentResultListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
         btPay = findViewById(R.id.bt_pay);
-        String sAmount="001";
+        String sAmount="1";
         int amount= Math.round(Float.parseFloat(sAmount)*400);
         btPay.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,13 +31,13 @@ public class payment extends AppCompatActivity implements PaymentResultListener 
                 checkout.setImage(R.drawable.rzp_logo);
                 JSONObject object=new JSONObject();
                 try {
-                    object.put("name","dheenu");
+                    object.put("name","kowshimani");
                     object.put("description","Test Payment");
                     object.put("theme.color","0093DD");
                     object.put("currency","INR");
                     object.put("amount",amount);
-                    object.put("prefill.contact","9095353249");
-                    object.put("prefill.email","dineshkanna.s00@gmail.com");
+                    object.put("prefill.contact","9677488536");
+                    object.put("prefill.email","kowshimani1101@gmail.com");
                     checkout.open(payment.this,object);
                 }catch (JSONException e){
                     e.printStackTrace();

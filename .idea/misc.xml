@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_distance_pay.xml" value="0.6" />
+        <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_foreman_login.xml" value="0.27447916666666666" />
+        <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_homepage.xml" value="0.27447916666666666" />
         <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_hook_vehicle_details.xml" value="0.264" />
         <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_payment.xml" value="0.22826086956521738" />
         <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_splashscreen.xml" value="0.22826086956521738" />
@@ -23,7 +25,6 @@
         <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/layout/activity_hook_vehicle_details.xml" value="0.10989583333333333" />
         <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/layout/activity_lift_vehicle_details.xml" value="0.10989583333333333" />
         <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/layout/activity_location.xml" value="0.25" />
-        <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/layout/activity_location_foreman.xml" value="0.25" />
         <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
         <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/layout/activity_map.xml" value="0.10989583333333333" />

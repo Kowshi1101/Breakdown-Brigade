@@ -20,6 +20,9 @@
         android:theme="@style/Theme.MEDIC"
         tools:targetApi="31">
         <activity
+            android:name=".location_foreman"
+            android:exported="false" />
+        <activity
             android:name=".distance_pay"
             android:exported="false" />
         <activity

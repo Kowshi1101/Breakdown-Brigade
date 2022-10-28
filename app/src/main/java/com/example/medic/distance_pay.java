@@ -1,6 +1,9 @@
 package com.example.medic;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +17,7 @@ TextView display,displaypay;
     private GoogleMap mMap;
     LatLng ylocation = new LatLng(11.024545, 77.003855);
     Double distance,distancepay;
+    Button button8;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +34,17 @@ TextView display,displaypay;
 
         distancepay=distance*100;
         displaypay.setText(String.format("%.2f", distancepay)+"Rs");
+
+        button8=findViewById(R.id.button8);
+        button8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(distance_pay.this,payment.class);
+                intent.putExtra("key",distancepay.toString());
+                startActivity(intent);
+                finish();
+            }
+        });
 
 
     }

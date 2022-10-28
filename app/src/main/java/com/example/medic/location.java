@@ -6,6 +6,7 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
@@ -19,6 +20,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 public class location extends FragmentActivity implements OnMapReadyCallback {
@@ -53,6 +55,22 @@ public class location extends FragmentActivity implements OnMapReadyCallback {
         ,R.drawable.ic_baseline_accessibility_new_24));
         map.animateCamera(CameraUpdateFactory.newLatLngZoom(yourlocation,10));
         map.addMarker(options);
+
+        map.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+            @Override
+            public boolean onMarkerClick(@NonNull Marker marker) {
+                LatLng markerlocation = marker.getPosition();
+
+                Intent intent = new Intent(location.this, distance_pay.class);
+                Bundle args = new Bundle();
+                args.putParcelable("from_position", markerlocation);
+                intent.putExtra("bundle", args);
+//                intent.putExtra("key",markerlocation);
+                startActivity(intent);
+
+                return false;
+            }
+        });
     }
     private BitmapDescriptor bitmapDescriptor(Context context, int vectorResId){
         Drawable vectorDrawable= ContextCompat.getDrawable(context,vectorResId);

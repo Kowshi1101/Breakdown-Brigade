@@ -58,10 +58,10 @@ public class MainActivity extends AppCompatActivity {
            }
        });
 
-//       search1.setOnClickListener(new View.OnClickListener() {
+//      search1.setOnClickListener(new View.OnClickListener() {
 //           @Override
-//           public void onClick(View view) {
-//               Intent intent = new Intent( MainActivity.this , gmap.class);
+//          public void onClick(View view) {
+//               Intent intent = new Intent( MainActivity.this , gap.class);
 //               startActivity(intent);
 //               finish();
 //           }

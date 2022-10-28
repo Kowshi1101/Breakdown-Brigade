@@ -21,14 +21,14 @@ Button button4,button7;
                 startActivity(intent);
             }
         });
-        button7 = findViewById(R.id.button7);
-        button7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(hook_vehicle_details.this,payment.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+//        button7 = findViewById(R.id.button7);
+//        button7.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(hook_vehicle_details.this,payment.class);
+//                startActivity(intent);
+//              finish();
+//            }
+//        });
     }
 }

@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_admin_login.xml" value="0.27447916666666666" />
+        <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_adminhomepage.xml" value="0.27447916666666666" />
         <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_distance_pay.xml" value="0.4" />
         <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_foreman_login.xml" value="0.27447916666666666" />
         <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_foreman_profile.xml" value="0.27447916666666666" />
@@ -12,6 +14,7 @@
         <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_payment.xml" value="0.22826086956521738" />
         <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_splashscreen.xml" value="0.22826086956521738" />
+        <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_user_login.xml" value="0.27447916666666666" />
         <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_user_profile.xml" value="0.27447916666666666" />
         <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/fragment_home.xml" value="0.1265625" />
         <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/fragment_profile.xml" value="0.1265625" />

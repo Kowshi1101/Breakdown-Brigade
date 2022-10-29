@@ -22,13 +22,11 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class forman_homepage extends AppCompatActivity {
-TextView display;
 Button profile,m;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forman_homepage);
-        display=(TextView) findViewById(R.id.tdisplay);
         profile = findViewById(R.id.button);
         m=findViewById(R.id.button7);
         profile.setOnClickListener(new View.OnClickListener() {

@@ -17,24 +17,24 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.core.AsyncEventListener;
 
-public class foreman_profile extends AppCompatActivity {
-TextView n,e,p;
-Button back;
-FirebaseAuth fAuth;
-FirebaseFirestore fstore;
-String userid;
+public class user_profile extends AppCompatActivity {
+    TextView n,e,p;
+    Button back;
+    FirebaseAuth fAuth;
+    FirebaseFirestore fstore;
+    String userid;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_foreman_profile);
-        n=findViewById(R.id.name);
-        e=findViewById(R.id.email);
-        p=findViewById(R.id.phone);
-        back=findViewById(R.id.button9);
+        setContentView(R.layout.activity_user_profile);
+        n=findViewById(R.id.name1);
+        e=findViewById(R.id.email1);
+        p=findViewById(R.id.phone1);
+        back=findViewById(R.id.button99);
         fAuth=FirebaseAuth.getInstance();
         fstore=FirebaseFirestore.getInstance();
         userid=fAuth.getCurrentUser().getUid();
-        DocumentReference documentReference=fstore.collection("foreman").document(userid);
+        DocumentReference documentReference=fstore.collection("users").document(userid);
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
@@ -47,8 +47,7 @@ String userid;
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(foreman_profile.this,forman_homepage.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+                Intent intent = new Intent(user_profile.this,MainActivity.class);
                 startActivity(intent);
             }
         });

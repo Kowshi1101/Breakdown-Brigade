@@ -7,35 +7,42 @@
     android:layout_height="match_parent"
     tools:context=".forman_homepage">
 
-    <TextView
-        android:id="@+id/tdisplay"
-        android:layout_width="124dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="129dp"
-        android:layout_marginTop="153dp"
-        android:layout_marginEnd="158dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="115dp"
-        android:layout_marginTop="66dp"
         android:layout_marginEnd="202dp"
         android:text="Officer Profile"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tdisplay" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.578" />
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Map"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="346dp" />
+        android:layout_width="162dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginEnd="202dp"
+        android:text="User Location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.688" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="335dp"
+        android:layout_height="315dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11"
+        app:srcCompat="@drawable/user_profile" />
 </androidx.constraintlayout.widget.ConstraintLayout>

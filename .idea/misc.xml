@@ -5,10 +5,17 @@
       <map>
         <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_distance_pay.xml" value="0.4" />
         <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_foreman_login.xml" value="0.27447916666666666" />
+        <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_foreman_profile.xml" value="0.27447916666666666" />
+        <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_forman_homepage.xml" value="0.27447916666666666" />
         <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_homepage.xml" value="0.27447916666666666" />
         <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_hook_vehicle_details.xml" value="0.264" />
+        <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_payment.xml" value="0.22826086956521738" />
         <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_splashscreen.xml" value="0.22826086956521738" />
+        <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/activity_user_profile.xml" value="0.27447916666666666" />
+        <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/fragment_home.xml" value="0.1265625" />
+        <entry key="..\:/Breakdown-Brigade/app/src/main/res/layout/fragment_profile.xml" value="0.1265625" />
+        <entry key="..\:/Breakdown-Brigade/app/src/main/res/menu/item_menu.xml" value="0.264" />
         <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/drawable/ic_baseline_accessibility_new_24.xml" value="0.224" />
         <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.224" />
         <entry key="..\:/Desktop/Breakdown-Brigade/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.22826086956521738" />
